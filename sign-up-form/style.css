@@ -65,7 +65,9 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus {
   background: #1CB5E0;
-  transform: translateY(1%) translateX(5%);
+  /* transform: translateY(1%) translateX(5%); */
+  animation-name: flip;
+  animation-duration: 2s;
   transition: background 0.5s cubic-bezier(.18,.89,.32,1.28) 0.5s;
 }
 
@@ -97,4 +99,10 @@ input[type="submit"]:hover {
 
 label {
   margin: 0 auto;
+}
+
+@keyframes flip {
+  0% {transform: translateY(0%) translateX(0%);}
+  5% {transform: translateY(1%) translateX(5%);}
+
 }
