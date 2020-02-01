@@ -13,15 +13,17 @@
       <h1>VGG Virtual Internship SignUp Form</h1>
       <div class="form-content">
         <form class="form" action="#" method="post">
-          <input type="text" name="Username" placeholder="Username">
-          <input type="text" name="Email" placeholder="example@example.com">
-          <input type="password" name="Password" placeholder="Password">
-          <input type="password" name="Password" placeholder="Confirm Password">
+          <input type="text" name="Username" placeholder="Username" id="username">
+          <input type="text" name="Email" placeholder="example@example.com" id="email">
+          <input type="password" name="Password" placeholder="Password" id="password" minlength="8"
+            maxlength="16" size="16">
+          <input type="password" name="Password" placeholder="Confirm Password" id="cPassword" minlength="8"
+            maxlength="16" size="16">
           <label for="">
             <input type="checkbox" name="" value="">
             <span>I Agree To The Terms & Conditions</span>
           </label>
-          <input type="submit" name="" value="Sign Up">
+          <input type="submit" name="" value="Sign Up" id="submitBtn">
         </form>
         <p>Dont have an Account? <a href="#">Login Now</a></p>
       </div>
@@ -33,6 +35,7 @@
       <p> &copy 2020 VGG SignUp Form. All rights reserved</p>
     </footer>
     <!-- end footer -->
+    <script type="text/javascript" src="app.js"></script>
   </body>
 
 </html>
