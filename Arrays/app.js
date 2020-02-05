@@ -200,3 +200,11 @@ console.log(result)
 //Active employee
 let isActive = employees.filter(employee => employee.active === true)
 console.log(isActive)
+
+//let salary = []
+let newEmployees = employees.sort((a,b) => {
+  return a.salary - b.salary
+})
+console.log(newEmployees.reverse(), 'hello');
+
+//ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
